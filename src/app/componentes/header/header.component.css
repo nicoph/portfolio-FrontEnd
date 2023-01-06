@@ -1,0 +1,22 @@
+
+
+#nav{
+    background-color: #79C6C0; 
+    padding-top: 10px;
+    height: 70px;
+}
+#logoap {
+    padding-left: 10px;
+    float: left;
+    height: 50px;
+}
+#social{
+    float:right;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+#social img {
+    height: 30px;
+    margin-left: 5px;    
+    
+}

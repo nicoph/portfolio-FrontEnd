@@ -1,0 +1,80 @@
+.row {
+    padding: 10px;
+    padding-bottom: 40px;
+}
+div {
+    color: rgb(223, 223, 223);
+    background-color: #79C6C0;
+}
+
+#about h2{
+    padding: 10px;
+    text-shadow:1px 1px rgb(158, 158, 158);
+}
+#about{
+    background-color:  rgb(159, 212, 212) ; 
+    color: rgb(112, 112, 112);  
+    
+}
+
+p {
+    padding: 5px;
+}
+
+
+@media (min-width:700px){
+
+    #perfil{
+        position: absolute;
+        width: 20%;       
+        top: 30%;
+    }
+    
+}
+@media (min-width:1000px){
+
+    #perfil{
+        position: absolute;
+        width: 20%;       
+        top: 25%;
+    }
+    
+}
+@media (min-width:1500px){
+
+    #perfil{
+        position: absolute;
+        width: 18%;        
+        top: 40%;
+    }
+    
+}
+
+
+@media (min-width:1800px){
+
+    #perfil{
+        position: absolute;
+        width: 15%;
+        
+        top: 60%;
+    }
+    
+}
+
+
+
+
+
+#nombre{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px rgb(109, 109, 109);
+}
+h6{
+    text-align: center;
+    text-shadow:1px 1px rgb(110, 110, 110);
+}
