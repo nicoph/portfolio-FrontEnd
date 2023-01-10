@@ -16,7 +16,9 @@ import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './componentes/home/home.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { NewExpereinciaComponent } from './componentes/experiencia/new-expereincia.component';
-import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component'
+import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './componentes/educacion/neweducacion.component';
+import { EditeducacionComponent } from './componentes/educacion/editeducacion.component'
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { EditExperienciaComponent } from './componentes/experiencia/edit-experie
     HomeComponent,
     LoginComponent,
     NewExpereinciaComponent,
-    EditExperienciaComponent
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent
   ],
   imports: [
     BrowserModule,
