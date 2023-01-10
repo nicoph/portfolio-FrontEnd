@@ -6,7 +6,8 @@
     <a href=""><img src="../../../assets/logos/linkedin.png" alt="lin"></a>
     <a href=""><img src="../../../assets/logos/facebook.png" alt="facebook"></a>
     <a href=""><img src="../../../assets/logos/github.png" alt="github"></a>
-    <button type="button" class="btn btn-outline-light" id="ingreso" (click)="login()">Log In</button>
+    <button type="button" class="btn btn-outline-light" id="ingreso" (click)="login()" *ngIf="!isLogged" >Log In</button>
+    <button type="button" class="btn btn-outline-light" id="ingreso" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
 
 </div>
 

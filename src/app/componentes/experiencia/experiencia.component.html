@@ -1,23 +1,26 @@
-<div class="row" id="backexp">
+<div class="row" id="contexp" >
     <h3>Experiencial Laboral</h3>
-    <div class="col-lg align-self-center" id="contexp">
-        <ul>
-            <li>
-                <h4>Trajajo1</h4><h4>2020</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laudantium. Magni, modi pariatur reiciendis ipsum natus voluptatem architecto incidunt unde vero delectus esse
-                     tenetur assumenda molestiae facere perspiciatis culpa minus?</p>
-            </li>
-            <li>
-                <h4>Trajajo1</h4><h4>2020</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laudantium. Magni, modi pariatur reiciendis ipsum natus voluptatem architecto incidunt unde vero delectus esse
-                     tenetur assumenda molestiae facere perspiciatis culpa minus?</p>
-            </li>
-            <li>
-                <h4>Trajajo1</h4><h4>2020</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laudantium. Magni, modi pariatur reiciendis ipsum natus voluptatem architecto incidunt unde vero delectus esse
-                     tenetur assumenda molestiae facere perspiciatis culpa minus?</p>
-            </li>
-        </ul>
+    <div class="col-lg-2" >
+        <button type="button" class="btn btn-info" routerLink="/nuevaexp" *ngIf="isLogged" >
+            Nueva experoen
+        </button>
+    </div>
+    <div class="col-lg align-self-center" id="backexp">
+        <table class="table">
+        <tbody>
+            <tr *ngFor="let Experiencia of expe"> 
+
+            <td><h4>{{Experiencia.nombreE}} </h4> </td>
+            <td>{{Experiencia.descripcionE}}</td>
+            <td *ngIf="isLogged"> <button type="button" class="btn btn-info" routerLink="/editexp/{{Experiencia.id}}">
+                <i class="bi bi-pencil-square">Editar</i></button> </td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-info" (click)="delete(Experiencia.id)">
+                        <i class="bi bi-trash-fill">Borrar</i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     </div>
 
 </div>
