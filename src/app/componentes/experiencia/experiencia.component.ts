@@ -29,6 +29,9 @@ cargarExperiencia(): void{
 delete(id?:number){
   if(id!= undefined){
     this.sExperiencia.delete(id).subscribe(
+      
+
+
       data=>{
         this.cargarExperiencia();
       }

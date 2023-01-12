@@ -1,9 +1,15 @@
 <div class="row">
+<h3>Hard y Soft Skills</h3>
 
-<div class="col-4">
+<div class="col-lg-2">
+    <button type="button" class="btn btn-info" routerLink="/nuevahys" *ngIf="isLogged"> Nueva Skill</button>
+</div>
+
+<div class="col-lg-4" *ngFor="let skill of skill">
 <circle-progress
-    [percent]="85"
+    [percent]="(skill.porcentaje)"
     [radius]="100"
+    [title]="(skill.nombre)"
     [outerStrokeWidth]="16"
     [innerStrokeWidth]="8"
     [outerStrokeColor]="'#78C000'"
@@ -11,29 +17,14 @@
     [animation]="true"
     [animationDuration]="300"
         ></circle-progress>
+
+        <td *ngIf="isLogged"> <button type="button" class="btn btn-info" routerLink="/edithys/{{skill.id}}">
+            <i class="bi bi-pencil-square">Editar  </i></button> </td>
+            <td *ngIf="isLogged">
+                <button class="btn btn-info" (click)="delete(skill.id)">
+                    <i class="bi bi-trash-fill">Borrar</i></button>
+            </td>
+        
     </div>
-    <div class="col-4">
-        <circle-progress
-            [percent]="85"
-            [radius]="100"
-            [outerStrokeWidth]="16"
-            [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#78C000'"
-            [innerStrokeColor]="'#C7E596'"
-            [animation]="true"
-            [animationDuration]="300"
-                ></circle-progress>
-            </div>
-            <div class="col-4">
-                <circle-progress
-                    [percent]="85"
-                    [radius]="100"
-                    [outerStrokeWidth]="16"
-                    [innerStrokeWidth]="8"
-                    [outerStrokeColor]="'#78C000'"
-                    [innerStrokeColor]="'#C7E596'"
-                    [animation]="true"
-                    [animationDuration]="300"
-                        ></circle-progress>
-                    </div>
+   
 </div>

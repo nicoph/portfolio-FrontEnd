@@ -18,7 +18,10 @@ import { LoginComponent } from './componentes/login/login.component';
 import { NewExpereinciaComponent } from './componentes/experiencia/new-expereincia.component';
 import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './componentes/educacion/neweducacion.component';
-import { EditeducacionComponent } from './componentes/educacion/editeducacion.component'
+import { EditeducacionComponent } from './componentes/educacion/editeducacion.component';
+import { EditHysComponent } from './componentes/hs-skills/edit-hys.component';
+import { NewHysComponent } from './componentes/hs-skills/new-hys.component';
+import { EditAboutComponent } from './componentes/about/edit-about.component'
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { EditeducacionComponent } from './componentes/educacion/editeducacion.co
     NewExpereinciaComponent,
     EditExperienciaComponent,
     NeweducacionComponent,
-    EditeducacionComponent
+    EditeducacionComponent,
+    EditHysComponent,
+    NewHysComponent,
+    EditAboutComponent
   ],
   imports: [
     BrowserModule,
